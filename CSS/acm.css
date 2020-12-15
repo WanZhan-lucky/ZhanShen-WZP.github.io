@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+    background-color:skyblue;
+}
+
+header {
+    font-weight: lighter;
+    background-image: url(../images/ACM/pic03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: rgb(15, 1, 1);
+    width: 100%;
+    height: 660px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#title {
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 60px;
+    color:darkturquoise;
+}
+
+#passages {
+    padding: 100px 25% 70px 25%;
+    font-size: 20px;
+    color:mediumslateblue;
+
+}
+
+
+
+section {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    /*border-bottom: 2px solid rgb(200, 200, 200);*/
+}
+
+#second {
+    height: 800px;
+}
+
+#second>div:nth-child(1) {
+    display: inline-block;
+    margin-top: 50px;
+    font-size:30px;
+}
+
+#second>div:nth-child(2) {
+    margin-top: 60px;
+    font-size: 48px;
+    height: 170px;
+    font-weight: lighter;
+}
+
+#info {
+    width: 80%;
+    height: 450px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+#info div {
+    width: 50%;
+    height: 200px;
+    text-align: left;
+    /* padding-bottom: 20px; */
+    /* padding:1px; */
+    /* background-color:rgb(0, 255, 136);   */
+}
+
+#phone,
+#pencil {
+    float: left;
+    /* text-align:right; */
+}
+
+#check,
+#setting {
+    float: right;
+}
+
+#info div img {
+    display: block;
+    float: left;
+    padding: 0 15px 80px 20px;
+    /* background-color:teal; */
+}
+
+#info div h1 {
+    padding-bottom: 10px;
+    color:teal;
+}
+
+
+#third {
+    height: 600px;
+    /*图片路径不能有空格*/
+    background-image: url(../images/ACM/acmhbut.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    color: white;
+    width: 100%;
+    font-weight: lighter;
+}
+
+#supportive {
+    width: 32%;
+    height: 430px;
+    float: left;
+    padding: 150px 0 0 10%;
+}
+
+#supportive h1 {
+    font-size: 38px;
+    font-weight: lighter;
+
+}
+
+#supportive p {
+    font-size: 18px;
+    color: black;
+}
+
+#ipad {
+    width: 40%;
+    height: 100%;
+    float: right;
+    margin-top: 20px;
+    /* background-color:forestgreen; */
+    color:green;
+    font-style:inherit;
+    font-size: 20px;
+}
+
+#ipad img {
+    margin-top:10px;
+    width: 100%;
+}
+
+#fourth {
+    width: 100%;
+    height: 850px;
+    /* background-color: chartreuse; */
+}
+
+#crew>div:nth-child(1) {
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: lighter;
+    /* background-color:red; */
+}
+
+#crew>div:nth-child(3) {
+    width: 30%;
+    /* padding-bottom: 5PX; */
+    margin: 0 auto;
+    font-weight: lighter;
+    /* background-color:lightseagreen; */
+    /* color:lightseagreen; */
+    font-size:20px;
+}
+
+#crewphoto {
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    /* background-color:red; */
+}
+
+.img_div {
+    width: 40%;
+    position: relative;
+    float: left;
+    /* background-color:green; */
+    margin: 5%;
+    /* background-color:magenta; */
+}
+
+.who {
+    width: 100%;
+    /* background-color:mediumspringgreen; */
+}
+
+#next {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(49, 26, 49);
+    border-radius: 50%;
+    margin: 0px auto;
+    line-height: 100px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#second {
+    background-color:gray;
+    margin-top: -20px;
+}
+
+.fifth {
+   
+    width: 50%;
+    height: 500px;
+    /* background-color: green; */
+    margin:0 auto;
+    margin-top:30px;
+}
+.cha{
+    /* font-size:25px; */
+    text-align:ceter;
+    /* padding-left:40%; */
+}
+#myself{
+    height:20px;
+    background-color:gray;
+    width:50%;
+    margin:0 auto;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>520表白爱心动画</title>
+    <style>
+        /* body{
+            background-color:pink;
+        } */
+        html{
+            animation:html 4s ease infinite;
+        }
+        div{
+            width:200px;
+            height:200px;
+            background-color:hotpink;
+            margin:200px auto;
+            position:relative;
+            transform:rotate(45deg);
+            animation:heart 4s ease infinite;
+        }
+        div:before{
+            content:"";
+            width:200px;
+            height:200px;
+            background-color:hotpink;
+            position:absolute;
+            border-radius:50%;
+            top:-100px;
+            animation:top 4s ease infinite;
+            transition:all 1s ease;
+        }
+        div:after{
+            content:"";
+            width:200px;
+            height:200px;
+            background-color:hotpink;
+            position:absolute;
+            border-radius:50%;
+            left:100px;
+            animation:left 4s ease infinite;
+            transition:all 1s ease;
+
+        }
+
+        @keyframes heart{
+            0%{
+                transform:rotate(0deg);
+                border-radius:200px;
+                background-color:ivory;
+            }
+            30%{
+               transform:rotate(45deg);
+               border-radius:10px;
+
+            }
+            50%{
+                background-color:hotpink;
+            }
+            70%{
+                transform:rotate(45deg);
+                border-radius:10px;
+            }
+            100%{
+                transform:rotate(90deg);
+                border-radius:200px;
+                background-color:ivory;
+            }
+
+        }
+       @keyframes html{
+           0%{
+               background-color:lightcoral;
+
+           }
+           50%{
+               background-color:ivory;
+           }
+           100%{
+               background-color:lightcoral;
+           }
+       }
+        @keyframes top{
+            0%{
+               top:0;
+                background-color:ivory;
+
+            }
+            30%{
+              top:-100px;
+            }
+            50%{
+                background-color:hotpink;
+               
+            }
+            70%{
+              top:-100px;
+               
+            }
+            100%{
+                top:0px;
+                background:ivory;
+            }
+        }
+
+        @keyframes left{
+            0%{
+                left:0;
+                background-color:ivory;
+
+            }
+            30%{
+               left:-100px;
+            }
+            50%{
+                background-color:hotpink;
+               
+            }
+            70%{
+               left:-100px;
+               
+            }
+            100%{
+                left:0px;
+                background:ivory;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>

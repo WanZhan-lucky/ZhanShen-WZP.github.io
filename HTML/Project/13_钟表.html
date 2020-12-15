@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟表</title>
+    <style>
+        /* --------------------------------------------------------
+        预备知识
+        *{
+            padding:0px;
+            margin:0px;
+
+        }
+        .sec-wrapper{
+            width:300px;
+            height:300px;
+            background-color: aqua;
+            animation:clock 60s linear;
+        }
+        .sec{
+            width:4px;
+            height:150px;
+            background-color: red;
+            margin:0px auto;
+        }
+        @keyframes clock{
+            from{
+                transform:rotateZ(0deg);
+            }
+            to{
+                transform:rotateZ(360deg);
+            }
+        } ---------------------------------------------------------
+        可以发现钟表的指针转动是根据父元素的转动来设置转动的
+        */
+        *{
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				height:100vh;
+				background:linear-gradient(rgb(95, 227, 250) 10%, rgb(12, 84, 192))
+			}
+        .clock{
+            /* width:439px;
+            height:439px; */
+            width:439px;
+            height:439px;
+            /* background-color: aqua; */
+            margin:90px auto;
+            border-radius:50%;
+            /* border:5px blue solid; */
+            position:relative;
+            
+            /* background-image:url("./img/13/clock.jpg"); */
+            background-image:url("./img/13/clock.jpg");
+            background-repeat:no-repeat;
+
+            /* background-position:-33px center; */
+            background-position:center;
+        }
+        .clock > div{
+            position:absolute;
+            left:0px;
+            right:0px;
+            top:0px;
+            bottom:0px;
+            margin:auto;
+        }
+        .hour-wrapper{
+            width:30%;
+            height:30%;
+            animation:clock 21600s linear infinite;
+        }
+        .hour{
+            width:6px;
+            height:50%;
+            background-color:black;
+            margin:0 auto;
+        }
+        .min-wrapper{
+            width:50%;
+            height:50%;
+            animation:clock 3600s steps(60) infinite;
+        }
+        .min{
+            width:3px;
+            height:50%;
+            background-color:black;
+            margin:0 auto;
+        }
+        .sec-wrapper{
+            width:65%;
+            height:65%;
+            animation:clock 60s steps(60) infinite;
+        }
+        .sec{
+            width:1px;
+            height:50%;
+            background-color:red;
+            margin:0 auto;
+        }
+
+        @keyframes clock{
+            from{
+                transform:rotateZ(0);
+            }
+            to{
+                transform:rotateZ(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="clock">
+        <div class="hour-wrapper">
+            <div class="hour"></div>
+        </div>
+        <div class="min-wrapper">
+            <div class="min"></div>
+        </div>
+        <div class="sec-wrapper">
+            <div class="sec"></div>
+        </div>
+    </div>
+
+</body>
+</html>
